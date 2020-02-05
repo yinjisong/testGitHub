@@ -10,5 +10,11 @@
 		3、在本地仓库中git remote add origin 远程仓库地址,将远程仓库的地址添加到origin中
 		4、查看git remote -v 可以看到一个fetch和一个push
 		5、git push origin master 这样就将本地的文件push到远程仓库了
+	克隆命令的效果 git clone 远程链接
+			1、init初始化
+			2、git remote add origin 
+		6、pull命令 等同于fetch + merge
+			1、fetch命令 git fetch origin master将远程仓库的代码抓取到本地的origin/master分支当中，但是并没有修改本地工作区的文件
+			2、merge命令 git merge origin/master 将origin/master分支中的不同合并到我们本地的工作区
 	</body>
 </html>
