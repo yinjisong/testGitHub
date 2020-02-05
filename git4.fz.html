@@ -13,7 +13,9 @@
 		具体操作
 		1、查看所有分支 git branch -v
 		2、创建分支 git branch [分支名称]
-		3、切换到某个分支 git checkout [分支名称(可以使用tab键补全)]
+		3、切换到某个分支 git checkout [分支名称(可以使用tab键补全)]。注意：切换到分支之后再进行的add和commit操作就是在分支中进行的操作了，在master中就不会出现修改增加的内容了
 		4、合并分支
+			1、将分支切换到要被合并的分支当中，比如当前我们在hot_fix分支当中，我们要将hot_fix分支所做的修改合并到master分支中，首先要先切换到master分支中
+			2、执行git merge [要合并的分支名]，比如当前我们是将hot_fix分支合并到master中，我们就要执行git merge hot_fix 命令
 	</body>
 </html>
