@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		1、进入当前用户的家目录 cd ~
+		2、删除.ssh目录 rm -rvf .ssh
+		3、运行命令生成.ssh秘钥目录 ssh-keygen -t rsa -C 568829266@qq.com
+		4、进入.ssh目录查看文件列表 cd .ssh ll-LF
+		5、查看id_rsa.pub文件内容 cat id_rsa.pub
+		6、复制id_rsa.pub文件内容，登录github，点击用户头像-》setting-》SSH and GPG keys -》new SSH key
+		7、输入复制的秘钥信息
+		8、回到git bash继续进行操作
+		9、当我们对项目进行了修改并进行add、commit操作之后，先不要进行push，因为我们要使用ssh进行push
+		10、git remote add origin_ssh 仓库的ssh地址 将仓库的ssh地址设置到origin_ssh中
+		11、push代码：git push origin_ssh master
+	</body>
+</html>
