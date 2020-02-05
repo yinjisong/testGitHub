@@ -22,9 +22,10 @@
 			2、将文件删除到暂存区之后怎么找回，1将文件删除，然后git add该文件，git stauts查看该文件就在状态栏中
 				2、使用git reset --hard HEAD 来重置，就将之前删除的文件给恢复了
 		6、比较版本差异
-			git diff git3.bbgl.html
+			git diff git3.bbgl.html 直接这么写就跟暂存区进行差异比较
 			行前有-说明是删除的行
 			行前有+说明是增加的行
-			
+			跟历史版本进行比较：git diff 【本地库中历史版本的版本号】 git3.bbgl.html
+			不指定文件名就将项目中的所有文件进行比较
 	</body>
 </html>
